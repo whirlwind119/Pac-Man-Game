@@ -42,7 +42,7 @@ RenderSettings:
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
-  serializedVersion: 11
+  serializedVersion: 9
   m_GIWorkflowMode: 1
   m_GISettings:
     serializedVersion: 2
@@ -54,7 +54,7 @@ LightmapSettings:
     m_EnableBakedLightmaps: 0
     m_EnableRealtimeLightmaps: 0
   m_LightmapEditorSettings:
-    serializedVersion: 9
+    serializedVersion: 8
     m_Resolution: 2
     m_BakeResolution: 40
     m_TextureWidth: 1024
@@ -87,7 +87,7 @@ LightmapSettings:
     m_PVRFilteringAtrousNormalSigma: 1
     m_PVRFilteringAtrousPositionSigma: 1
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_ShadowMaskMode: 2
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -280,3 +280,4 @@ MonoBehaviour:
   wall: {fileID: 1009820977885016, guid: b831088c795cb244bb751bc350257080, type: 2}
   pellet: {fileID: 1751847853904412, guid: 43f2655e866a9a64f81ae18610d981e9, type: 2}
   player: {fileID: 1657431247146906, guid: ca0262f5ecf60774297cb6e55e8671ec, type: 2}
+  ghost: {fileID: 1392333990169180, guid: f94acde0fa27bbb429698f5577abb81c, type: 2}
