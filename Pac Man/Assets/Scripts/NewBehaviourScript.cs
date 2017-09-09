@@ -6,6 +6,8 @@ public class NewBehaviourScript : MonoBehaviour {
     public float speed = 100;
     public string orientation;
     public static int score = 0;
+    public static int num_lives = 3;
+    public static int highest_score = 0;
 
 
     private Rigidbody2D rb;
@@ -53,6 +55,14 @@ public class NewBehaviourScript : MonoBehaviour {
         if (c.gameObject.tag == "coin") {
             Destroy(c.gameObject);
             score++;
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D c) {
+        if (c.gameObject.tag == "ghost") {
+            Debug.Log("ghost");
+            num_lives--;
+            gameObject.transform.position = new Vector2((float)13.5, 9);
         }
     }
 

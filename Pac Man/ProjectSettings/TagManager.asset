@@ -6,6 +6,7 @@ TagManager:
   tags:
   - wall
   - coin
+  - ghost
   layers:
   - Default
   - TransparentFX
