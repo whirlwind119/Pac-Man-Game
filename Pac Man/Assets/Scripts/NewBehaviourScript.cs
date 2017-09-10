@@ -8,6 +8,8 @@ public class NewBehaviourScript : MonoBehaviour {
     public static int score = 0;
     public static int num_lives = 3;
     public static int highest_score = 0;
+	public GameObject life2;
+	public GameObject life1;
 
 
     private Rigidbody2D rb;
@@ -16,6 +18,10 @@ public class NewBehaviourScript : MonoBehaviour {
     void Start () {
         orientation = "right";
         rb = GetComponent<Rigidbody2D>();
+
+		life2 = (GameObject)Instantiate (life2, new Vector2 (-2, 5), Quaternion.identity);
+		life1 = (GameObject)Instantiate (life1, new Vector2 (-2, 4), Quaternion.identity);
+
     }
 	
 	// Update is called once per frame
@@ -62,6 +68,11 @@ public class NewBehaviourScript : MonoBehaviour {
         if (c.gameObject.tag == "ghost") {
             Debug.Log("ghost");
             num_lives--;
+			if (num_lives == 2) {
+				Destroy (life2);
+			} else if (num_lives == 1) {
+				Destroy (life1);
+			}
             gameObject.transform.position = new Vector2((float)13.5, 9);
         }
     }
