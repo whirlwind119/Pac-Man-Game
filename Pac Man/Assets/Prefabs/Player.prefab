@@ -101,6 +101,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 300
   orientation: right
+  life2: {fileID: 1809999697736446, guid: 89ab205db1607264992969e225d03a74, type: 2}
+  life1: {fileID: 1809999697736446, guid: 89ab205db1607264992969e225d03a74, type: 2}
 --- !u!212 &212043925617478102
 SpriteRenderer:
   m_ObjectHideFlags: 1
