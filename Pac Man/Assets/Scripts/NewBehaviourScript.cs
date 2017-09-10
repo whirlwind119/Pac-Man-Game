@@ -66,13 +66,13 @@ public class NewBehaviourScript : MonoBehaviour {
 
     private void OnCollisionEnter2D(Collision2D c) {
         if (c.gameObject.tag == "ghost") {
-            Debug.Log("ghost");
             num_lives--;
 			if (num_lives == 2) {
 				Destroy (life2);
 			} else if (num_lives == 1) {
 				Destroy (life1);
 			}
+            orientation = "right";
             gameObject.transform.position = new Vector2((float)13.5, 9);
         }
     }

@@ -50,6 +50,7 @@ public class GuiScript : MonoBehaviour {
 
         GUI.Label(new Rect(native_width / 2-500, native_height / 2-500, 400, 150), "Game\nScore\n" + calculateScore(NewBehaviourScript.score));
         GUI.Label(new Rect(native_width / 2 + 500, native_height / 2 - 500, 400, 150), "High\nScore\n" + calculateScore(NewBehaviourScript.highest_score));
+        GUI.Label(new Rect(native_width/2 -503, native_height/2 +375,400,150),"Lives");
 
         if (is_dead == true) {
             if (GUI.Button(new Rect(native_width/2-50,native_height/2-50, 100,100), "Replay Game?")) {
